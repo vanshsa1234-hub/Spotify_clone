@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    font-family: 'Circular Black', 'Gotham', 'Avenir', sans-serif;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+header nav div{
+    margin: 5px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.head1 {
+    display: flex;
+}
+
+button img {
+    width: 25px;
+    height: 25px;
+}
+
+.head1 button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #2a2a2a;
+    cursor: pointer;
+}
+.head1 button:hover{
+    background-color: #363434;
+    width: 52px;
+    height: 52px;
+}
+.search-container {
+      display: flex;
+      align-items: center;
+      background-color: #2a2a2a;
+      border-radius: 30px;
+      padding: 10px 20px;
+      width: 400px;
+      color: white;
+    }
+.search-container img{
+    width: 25px;
+    filter: invert();
+}
+.search-container button{
+    border: none;
+    background: none;
+}
+.search-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.search-container input::placeholder {
+    color: #b3b3b3;
+}
+
+.search-container img:hover {
+    filter:contrast(50);
+    cursor: pointer;
+}
+.line{
+    color: white;
+    font-size: 25px;
+}
+.head2 ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+.head2 ul a {
+    text-decoration: none;
+    color: #b3b3b3;
+
+}
+.head2{
+    font-size: 17px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+.head2 ul li a:hover{
+    font-weight: bolder;
+    color: white;
+}
+@media only screen and (max-width: 1147px) {
+    header nav div {
+    margin: 5px;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+    .search-container {
+        width: 300px;
+    }
+    .head2 ul{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .install{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+} 
+@media only screen and (max-width: 726px) {
+    /* .head{
+        display: flex;
+        flex-direction: column;
+    } */
+    .search-container{
+        margin: 0px -12px;
+    }
+    .search-container input{
+        flex: 0;
+    }
+}
+.line1 {
+    font-size: 30px;
+    color: #b3b3b3;
+}
+.install img{
+    height: 20px;
+    cursor: pointer;
+}
+.install li{
+    list-style: none;
+    display: flex;
+    gap: 4px;
+}
+.install a{
+    color: #b3b3b3;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.install li a:hover{
+    color: white;
+    font-weight: bolder;
+}
+.install button{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.install button:hover{
+    padding: 13px 17px;
+    font-weight: bolder;
+}
+.main{
+    display: flex;
+
+}
+.lib{
+    color: white;
+    background-color: #363434;
+    border-radius: 10px;
+    margin: 5px;
+    width: 22vw;
+}
+.plus{
+    cursor: pointer;
+    font-size: 20px;
+}
+.lib-head{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.playlist{
+    margin: 19px 5px;
+    background-color: #1f1b1b;
+    padding: 10px;
+    border-radius: 10px;
+}
+.first-line{
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 5px;
+}
+.second-line{
+    font-size: 14px;
+    margin: 9px;
+}
+.playlist button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.playlist button:hover{
+    padding: 12px 17px;
+}
+.mid{
+    margin: 19px 5px;
+    background-color: #1f1b1b;
+    padding: 10px;
+    border-radius: 10px;
+    /* padding-right: 100px; */
+}
+.mid button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.mid button:hover{
+    padding: 12px 17px;
+}
+.lib-links ul{
+    margin-top: 30px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    gap: 10px;
+}
+.lib-links a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 10px;
+}
+.cookies a{
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+    margin-left: 10px;
+}
+.cookies a:hover{
+    text-decoration: underline;
+}
+.lib-links button{
+    display: flex;
+    align-items: center;
+    padding: 1px 15px;
+    gap: 5px;
+    border-radius: 20px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    margin: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.lib-links button img{
+    width: 15px;
+}
+.lib-links button:hover{
+    border: 2px solid white;
+}
+.overflow{
+    width: 22vw;
+    height: 260px;
+    overflow:scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+    
+.overflow:hover{
+    scrollbar-width: thin;              
+    scrollbar-color: grey #363434 ; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: 1px;
+    scroll-behavior: smooth;
+}
+.song{
+    height: 68vh;
+    color: white;
+    background-color: #363434;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.song:hover{
+    scrollbar-width: thin;             
+    scrollbar-color: grey #363434 ; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: 1px;
+    scroll-behavior: smooth;
+}
+.song-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.show{
+    font-size: 13px;
+    color: #b3b3b3;
+}
+.show:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.song-list{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    margin: 10px;
+    margin-bottom: 30px;
+    gap: 20px;
+    
+}
+.s1{
+    height: 260px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.s1:hover{
+    cursor: pointer;
+    background-color: #464343;
+}
+.s1 img{
+    width: 180px;
+    border-radius: 8px;
+}
+.singer a{
+    color: #b3b3b3;
+    font-size: 12px;
+    text-decoration: none;
+}
+.s1-1{
+    font-size: 16.5px;
+    font-weight: bolder;
+}
+.s1-1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.singer a:hover{
+    text-decoration: underline;
+}
+.artist{
+    display: flex;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: 2px;
+}
+.artist:hover{
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.s2 img{
+    margin: 12px;
+    width: 180px;
+    border-radius: 20pc;
+}
+.s2{
+    margin: 2px;
+}
+.s2:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #464343;
+}
+.s2-3 img{
+    width: 190px;
+    height: 190px;
+}
+.art{
+    font-size: 13px;
+    color: #b3b3b3;
+    margin-top: 6px;
+}
+.playbar{
+    padding: 17px;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    color: white;
+    margin: 3px;
+    border-radius: 50px;
+    position: relative;
+}
+.playbar button{
+    background: none;
+    border-radius: 10px;
+    box-shadow: #509bf5;
+    border: 10px;
+}
+.playbar .btn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.btn button{
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #1bb8d4;
+}
+.seekbar{
+    margin: 6px;
+    height: 1px;
+    width: 97%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+}
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 7px;
+    left: 0%;
+    border: 2px solid black;
+    transition: left 0.5s;
+}
+.bar-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.songinfo{
+    font-size: 18px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #0000, #ffff) center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 25s linear infinite;
+}
+@keyframes animate {
+    to{
+        background-position-x: 1000px; 
+    }
+}
+.seekbar:hover{
+    border: 3px solid white;
+}

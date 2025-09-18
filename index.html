@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="top">
+                <div class="head">
+                    <div>
+                        <img style="filter: invert();" src="assets/logo.svg" alt="">
+                    </div>
+                    <div class="head1">
+                        <button>
+                            <img style="filter: invert();" src="assets/home.svg" alt="home">
+                        </button>
+                    </div>
+                    <div class="search-container">
+                        <img src="assets/search.svg" alt="">
+                        <input type="text" placeholder="What do you want to play?" />
+                        <div class="line">|</div>
+                        <button><img src="assets/input.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="head2">
+                    <ul>
+                        <li><a href="">Premium</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Download</a></li>
+                    </ul>
+                    <div class="line1">|</div>
+                    <div class="install">
+                        <li><img style="filter: invert();" src="assets/install.svg" alt=""><a href="">Install App</a>
+                        </li>
+                        <li><a href="">Sign up</a></li>
+                        <button>Log in</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <div class="lib">
+                <div class="lib-head">
+                    <div>Your Library</div>
+                    <div class="plus">+</div>
+                </div>
+                <div class="overflow">
+                    <div class="playlist">
+                        <div class="first-line">Create your first playlist</div>
+                        <div class="second-line">It's easy,we'll help you</div>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="mid">
+                        <div class="first-line">Let's find some podcasts to follow</div>
+                        <div class="second-line">We'll keep you updated on new episodes</div>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="lib-links">
+                    <ul>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Safety&PrivacyCenter</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookies</a></li>
+                        <li><a href="">About Ads</a></li>
+                        <li><a href="">Accessibility</a></li>
+                    </ul>
+                    <div class="cookies"><a href="">Cookies</a></div>
+                    <button>
+                        <img style="filter: invert();" src="assets/earth.svg" alt="">
+                        <div class="english">English</div>
+                    </button>
+                </div>
+            </div>
+            <div class="song">
+                <div class="song-head">
+                    <div class="title">Trending songs</div>
+                    <div class="show">Show all</div>
+                </div>
+                <div class="song-list">
+                    <div id="firstSong" class="s1">
+                        <img src="assets/img1.jpeg" alt="">
+                        <div class="s1-1">Pardesiya - From "Param Sundari"</div>
+                        <a href="songs/Pardesiya Param Sundari 128 Kbps.mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/1wRPtKGflJrBx9BmLsSwlU">Pritam</a>,
+                                <a draggable="true" dir="auto" href="/artist/4YRxDV8wJFPHPTeXepOstw">Arijit Singh</a>,
+                                <a draggable="true" dir="auto" href="/artist/3tPQOjkxO3mrYrrgkTeXgH">Nikhita Gandhi</a>,
+                                <a draggable="true" dir="auto" href="/artist/2fMqTqiTxUDlmcOEPaQSsx">Amitabh
+                                    Bhattacharya</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="secondSong" class="s1">
+                        <img src="assets/img2.jpeg" alt="">
+                        <div class="s1-1">Aavan Jaavan (From "WAR 2")</div>
+                        <a href="songs/Aavan Jaavan War 2 128 Kbps.mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a href="/artist/1mBydYMVBECdDmMfE2sEUO">Sachin-Jigar</a>,
+                                <a href="/artist/1dVygo6tRFXC8CSWURQJq2">Sonu Nigam</a>,
+                                <a href="/artist/2L4PimBfxoTMZRp2SfVP5g">Krishnakali Saha</a>,
+                                <a href="/artist/2fMqTqiTxUDlmcOEPaQSsx">Amitabh Bhattacharya</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="thirdSong" class="s1">
+                        <img src="assets/img3.jpeg" alt="">
+                        <div class="s1-1">Thodi Si Daaru</div>
+                        <a href="songs/Thodi Si Daaru - AP Dhillon.mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/6LEG9Ld1aLImEFEVHdWNSB">AP Dhillon</a>,
+                                <a draggable="true" dir="auto" href="/artist/0oOet2f43PA68X5RxKobEy">Shreya Ghoshal</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="fourthSong" class="s1">
+                        <img src="assets/img4.jpeg" alt="">
+                        <div class="s1-1">Firestorm (From "They Call Him OG")</div>
+                        <a href="songs/Firestorm They Call Him OG (pagalall.com).mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/2FgHPfRprDaylrSRVf1UlN">Thaman S</a>,
+                                <a draggable="true" dir="auto" href="/artist/5Hn84AFwiTEi8eMoI5B9AS">Silambarasan
+                                    TR</a>,
+                                <a draggable="true" dir="auto" href="/artist/5cBFMoMgcAt03YL2r0tS25">Raja Kumari</a>,
+                                <a draggable="true" dir="auto" href="/artist/5iFKS1bnBNFWBAmd7mi0vf">Deepak Blue</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="fifthSong" class="s1">
+                        <img src="assets/img5.jpeg" alt="">
+                        <div class="s1-1">Gabhru!</div>
+                        <a href="songs/Gabhru (New Version) - Karan Aujla.mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/6DARBhWbfcS9E4yJzcliqQ">Karan Aujla</a>, <a draggable="true" dir="auto" href="/artist/3nqS8jzqmsPKFJTp0BOIel">Ikky</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="sixthSong" class="s1">
+                        <img src="assets/img6.jpeg" alt="">
+                        <div class="s1-1">Naam Chale</div>
+                        <a href="songs/Naam_Chale_1.mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/4naSOUBsPQeISuibs56w6Y">Vikram Sarkar</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="seventhSong" class="s1">
+                        <img src="assets/img7.jpeg" alt="">
+                        <div class="s1-1">Mobsta</div>
+                        <a href="songs/Mobsta - (Raag.Fm).mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/4zCH9qm4R2DADamUHMCa6O">Anirudh Ravichander</a>, <a draggable="true" dir="auto" href="/artist/3bsrlEbnX8sWwXlTe80RSr">Heisenberg</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="eighthSong" class="s1">
+                        <img src="assets/img8.jpeg" alt="">
+                        <div class="s1-1">Sirra</div>
+                        <a href="songs/Sirra - Guru Randhawa.mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/5rQoBDKFnd1n6BkdbgVaRL">Guru Randhawa</a>, <a draggable="true" dir="auto" href="/artist/3qmx2CGviBi21h58nDMJcs">Kiran Bajwa</a>, <a draggable="true" dir="auto" href="/artist/0N2lT1m7rG0klYHZrkyMPw">Rony Ajnali</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="ninethSong"class="s1">
+                        <img src="assets/img9.jpeg" alt="">
+                        <div class="s1-1">Preet Re - From "Dhadak 2"</div>
+                        <a href="songs/Preet Re - (Raag.Fm).mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/2GoeZ0qOTt6kjsWW4eA6LS">Darshan Raval</a>, <a draggable="true" dir="auto" href="/artist/3dN9MQpjIyNxyeRfz4EDZe">Rochak Kohli</a>, <a draggable="true" dir="auto" href="/artist/00sCATpEvwH48ays7PlQFU">Jonita Gandhi</a>, <a draggable="true" dir="auto" href="/artist/3nLLr3ShsQC2Hdrwjl14ie">Gurpreet Saini</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="tenthSong"class="s1">
+                        <img src="assets/img10.jpeg" alt="">
+                        <div class="s1-1">Bas Ek Dhadak - From "Dhadak 2"</div>
+                        <a href="songs/Bas Ek Dhadak - (Raag.Fm).mp3"></a>
+                        <div class="singer-list">
+                            <span class="singer">
+                                <a draggable="true" dir="auto" href="/artist/0oOet2f43PA68X5RxKobEy">Shreya Ghoshal</a>, <a draggable="true" dir="auto" href="/artist/1tqysapcCh1lWEAc9dIFpa">Jubin Nautiyal</a>, <a draggable="true" dir="auto" href="/artist/2zvJLk0gTH7r7A5Q6X5Bq8">Javed-Mohsin</a>, <a draggable="true" dir="auto" href="/artist/5r2baeTwcCJnuIsDIlxUJo">Rashmi Virag</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-head">
+                    <div class="title">Popular artists</div>
+                    <div class="show">Show all</div>
+                </div>
+                <div class="artist">
+                    <div class="s2">
+                        <img src="assets/a1.jpeg" alt="">
+                        <div class="s1-1">Pritam</div>
+                        <div class="art">Artist</div>
+                    </div>
+                    <div class="s2">
+                        <img src="assets/a2.jpeg" alt="">
+                        <div class="s1-1">A.R.Rahaman</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2 s2-3">
+                        <img src="assets/a3.jpeg" alt="">
+                        <div class="s1-1">Arijit Singh</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2">
+                        <img src="assets/a4.jpeg" alt="">
+                        <div class="s1-1">Sachin-Jigar</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2">
+                        <img src="assets/a5.jpeg" alt="">
+                        <div class="s1-1">Vishal-Shekhar</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2">
+                        <img src="assets/a6.jpeg" alt="">
+                        <div class="s1-1">Atif Aslam</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2 s2-3">
+                        <img src="assets/a7.jpeg" alt="">
+                        <div class="s1-1">Anirudh Ravichander</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2">
+                        <img src="assets/a8.jpeg" alt="">
+                        <div class="s1-1">Udit Narayan</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2">
+                        <img src="assets/a9.jpeg" alt="">
+                        <div class="s1-1">Yo Yo Honey Singh</div>
+                        <div class="art">Artist</div>
+                    </div>
+                     <div class="s2">
+                        <img src="assets/a10.jpeg" alt="">
+                        <div class="s1-1">Shankar-Ehsaan-Loy</div>
+                        <div class="art">Artist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="playbar">
+            <div class="seekbar">
+                <div class="circle">
+                </div>
+            </div>
+            <div class="bar-info">
+                <div class="songinfo"></div>
+                <div class="songtime"></div>
+
+            </div>
+            <div class="btn">
+                <button id="prevBtn"><img src="play_pause_prv_next/prev.svg" alt=""></button>
+                <button id="playBtn"><img src="play_pause_prv_next/play.svg" alt=""></button>
+                <button id="nextBtn"><img src="play_pause_prv_next/next.svg" alt=""></button>
+            </div>
+            <div class="sliding_bar"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
